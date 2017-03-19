@@ -1,0 +1,12 @@
+
+<RENDERBATCH>
+
+  <RENDERIMG RASNAME="C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.sdk\SDK\SDK_Export\hw\imgs\processing_system7_0.jpg" SVGNAME="C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.sdk\SDK\SDK_Export\hw\imgs\processing_system7_0.svg" TMPSVGFN="C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.srcs\sources_1\edk\system\__xps\.dswkshop\processing_system7_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.sdk\SDK\SDK_Export\hw\imgs\led_counter_0.jpg" SVGNAME="C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.sdk\SDK\SDK_Export\hw\imgs\led_counter_0.svg" TMPSVGFN="C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.srcs\sources_1\edk\system\__xps\.dswkshop\led_counter_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.sdk\SDK\SDK_Export\hw\imgs\axi_interconnect_1.jpg" SVGNAME="C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.sdk\SDK\SDK_Export\hw\imgs\axi_interconnect_1.svg" TMPSVGFN="C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.srcs\sources_1\edk\system\__xps\.dswkshop\axi_interconnect_1.svg"/>
+
+  <RENDERIMG RASNAME="C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.sdk\SDK\SDK_Export\hw\imgs\system_blkd.jpg" SVGNAME="C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.sdk\SDK\SDK_Export\hw\imgs\system_blkd.svg" TMPSVGFN="C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.srcs\sources_1\edk\system\__xps\.dswkshop\system_blkd.svg"/>
+
+</RENDERBATCH>

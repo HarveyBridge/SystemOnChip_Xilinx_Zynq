@@ -1,0 +1,8 @@
+INTSTYLE=pa
+INFILE=C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.runs\impl_1\system_stub_routed.ncd
+OUTFILE=C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.runs\impl_1\system_stub.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.runs\impl_1
+LICENSE=WebPack
+USER_INFO=__0_0_0

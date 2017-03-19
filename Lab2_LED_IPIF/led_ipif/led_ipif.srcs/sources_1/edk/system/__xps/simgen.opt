@@ -1,0 +1,1 @@
+ -p zynq -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X C:/Users/BowenHsu/Documents/SystemOnChip_Xilinx_Zynq/Lab2_LED_IPIF/led_ipif/led_ipif.srcs/sources_1/edk/system/

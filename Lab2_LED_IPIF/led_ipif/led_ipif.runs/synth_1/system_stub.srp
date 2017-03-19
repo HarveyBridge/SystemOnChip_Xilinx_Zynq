@@ -1,0 +1,633 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: system_stub.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "system_stub.prj"
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "system_stub.ngc"
+
+---- Source Options
+Top Module Name                    : system_stub
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Netlist Hierarchy                  : rebuilt
+
+---- Other Options
+Cores Search Directories           : {..\..\led_ipif.srcs\sources_1\edk\system\implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Users/BowenHsu/Documents/SystemOnChip_Xilinx_Zynq/Lab2_LED_IPIF/led_ipif/led_ipif.srcs/sources_1/edk/system/hdl/system.vhd" into library work
+Parsing entity <system>.
+Parsing architecture <STRUCTURE> of entity <system>.
+Parsing VHDL file "C:/Users/BowenHsu/Documents/SystemOnChip_Xilinx_Zynq/Lab2_LED_IPIF/led_ipif/led_ipif.srcs/sources_1/edk/system/system_stub.vhd" into library work
+Parsing entity <system_stub>.
+Parsing architecture <STRUCTURE> of entity <system_stub>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_stub> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <system> (architecture <>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_stub>.
+    Related source file is "C:/Users/BowenHsu/Documents/SystemOnChip_Xilinx_Zynq/Lab2_LED_IPIF/led_ipif/led_ipif.srcs/sources_1/edk/system/system_stub.vhd".
+    Set property "BOX_TYPE = user_black_box" for instance <system_i>.
+    Summary:
+	no macro.
+Unit <system_stub> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <..\..\led_ipif.srcs\sources_1\edk\system\implementation/system.ngc>.
+Reading core <..\..\led_ipif.srcs\sources_1\edk\system\implementation/system_processing_system7_0_wrapper.ngc>.
+Reading core <..\..\led_ipif.srcs\sources_1\edk\system\implementation/system_axi_interconnect_1_wrapper.ngc>.
+Reading core <..\..\led_ipif.srcs\sources_1\edk\system\implementation/system_led_counter_0_wrapper.ngc>.
+Loading core <system_processing_system7_0_wrapper> for timing and area information for instance <processing_system7_0>.
+Loading core <system_axi_interconnect_1_wrapper> for timing and area information for instance <axi_interconnect_1>.
+Loading core <system_led_counter_0_wrapper> for timing and area information for instance <led_counter_0>.
+Loading core <system> for timing and area information for instance <system_i>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+WARNING:Xst:528 - Multi-source in Unit <processing_system7_0> on signal <PS_SRSTB>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <processing_system7_0_PS_SRSTB>
+   Output port PS7:PSSRSTB of instance <system_i/processing_system7_0/processing_system7_0/PS7_i>
+
+WARNING:Xst:528 - Multi-source in Unit <processing_system7_0> on signal <PS_CLK>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <processing_system7_0_PS_CLK>
+   Output port PS7:PSCLK of instance <system_i/processing_system7_0/processing_system7_0/PS7_i>
+
+WARNING:Xst:528 - Multi-source in Unit <processing_system7_0> on signal <PS_PORB>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <processing_system7_0_PS_PORB>
+   Output port PS7:PSPORB of instance <system_i/processing_system7_0/processing_system7_0/PS7_i>
+
+Optimizing unit <system_stub> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_stub, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1> 
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> 
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1> 
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> 
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1> 
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_stub.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 542
+#      GND                         : 4
+#      INV                         : 99
+#      LUT1                        : 33
+#      LUT2                        : 77
+#      LUT3                        : 38
+#      LUT4                        : 75
+#      LUT5                        : 25
+#      LUT6                        : 109
+#      MUXCY                       : 41
+#      MUXF7                       : 1
+#      VCC                         : 2
+#      XORCY                       : 38
+# FlipFlops/Latches                : 280
+#      FD                          : 22
+#      FDC                         : 40
+#      FDE                         : 61
+#      FDP                         : 8
+#      FDR                         : 26
+#      FDRE                        : 115
+#      LDC                         : 8
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 11
+#      IBUF                        : 3
+#      OBUF                        : 8
+# Others                           : 1
+#      PS7                         : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             280  out of  106400     0%  
+ Number of Slice LUTs:                  456  out of  53200     0%  
+    Number used as Logic:               456  out of  53200     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    573
+   Number with an unused Flip Flop:     293  out of    573    51%  
+   Number with an unused LUT:           117  out of    573    20%  
+   Number of fully used LUT-FF pairs:   163  out of    573    28%  
+   Number of unique control sets:        44
+
+IO Utilization: 
+ Number of IOs:                         138
+ Number of bonded IOBs:                  11  out of    200     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                                                 | Clock buffer(FF name)                                                        | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+-------+
+system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>                                                                                                    | BUFG                                                                         | 272   |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[7]_AND_14_o(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[7]_AND_14_o1:O)| NONE(*)(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_33_LDC)| 1     |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[0]_AND_28_o(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[0]_AND_28_o1:O)| NONE(*)(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_26_LDC)| 1     |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[2]_AND_24_o(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[2]_AND_24_o1:O)| NONE(*)(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_28_LDC)| 1     |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[3]_AND_22_o(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[3]_AND_22_o1:O)| NONE(*)(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_29_LDC)| 1     |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[1]_AND_26_o(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[1]_AND_26_o1:O)| NONE(*)(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_27_LDC)| 1     |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[4]_AND_20_o(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[4]_AND_20_o1:O)| NONE(*)(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_30_LDC)| 1     |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[5]_AND_18_o(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[5]_AND_18_o1:O)| NONE(*)(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_31_LDC)| 1     |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[6]_AND_16_o(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[6]_AND_16_o1:O)| NONE(*)(system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_32_LDC)| 1     |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.163ns (Maximum Frequency: 240.206MHz)
+   Minimum input arrival time before clock: 2.096ns
+   Maximum output required time after clock: 2.760ns
+   Maximum combinational path delay: 0.000ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>'
+  Clock period: 4.163ns (frequency: 240.206MHz)
+  Total number of paths / destination ports: 4563 / 560
+-------------------------------------------------------------------------
+Delay:               4.163ns (Levels of Logic = 8)
+  Source:            system_i/led_counter_0/led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0 (FF)
+  Destination:       system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0 (FF)
+  Source Clock:      system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0> rising
+  Destination Clock: system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0> rising
+
+  Data Path: system_i/led_counter_0/led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0 to system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            30   0.282   0.787  led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0 (led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0)
+     LUT5:I1->O            7   0.053   0.675  led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1 (S_AXI_AWREADY)
+     end scope: 'system_i/led_counter_0:S_AXI_AWREADY'
+     begin scope: 'system_i/axi_interconnect_1:M_AXI_AWREADY<0>'
+     LUT5:I1->O            1   0.053   0.602  axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n011611_SW1_F (N31)
+     LUT3:I0->O            2   0.053   0.419  axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n011611_SW11 (N15)
+     LUT6:I5->O            1   0.053   0.000  axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_G (N40)
+     MUXF7:I1->O           4   0.217   0.433  axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1 (axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_awready_mux)
+     LUT6:I5->O            2   0.053   0.419  axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1 (axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/aa_awready)
+     LUT6:I5->O            1   0.053   0.000  axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0_glue_set (axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0_glue_set)
+     FDR:D                     0.011          axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0
+    ----------------------------------------
+    Total                      4.163ns (0.828ns logic, 3.335ns route)
+                                       (19.9% logic, 80.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>'
+  Total number of paths / destination ports: 317 / 166
+-------------------------------------------------------------------------
+Offset:              2.096ns (Levels of Logic = 5)
+  Source:            system_i/processing_system7_0/processing_system7_0/PS7_i:MAXIGP0WVALID (PAD)
+  Destination:       system_i/led_counter_0/led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_2 (FF)
+  Destination Clock: system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0> rising
+
+  Data Path: system_i/processing_system7_0/processing_system7_0/PS7_i:MAXIGP0WVALID to system_i/led_counter_0/led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PS7:MAXIGP0WVALID      4   0.000   0.000  processing_system7_0/PS7_i (M_AXI_GP0_WVALID)
+     end scope: 'system_i/processing_system7_0:M_AXI_GP0_WVALID'
+     begin scope: 'system_i/axi_interconnect_1:S_AXI_WVALID<0>'
+     LUT5:I1->O            3   0.053   0.499  axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/M_AXI_WVALID1 (DEBUG_MP_MR_WDATACONTROL<0>)
+     end scope: 'system_i/axi_interconnect_1:M_AXI_WVALID<0>'
+     begin scope: 'system_i/led_counter_0:S_AXI_WVALID'
+     LUT5:I3->O            6   0.053   0.772  led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_start11 (led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/start)
+     LUT6:I0->O            1   0.053   0.000  led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I/Mmux_CS11 (led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_expnd_i<2>)
+     FDRE:D                    0.011          led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_2
+    ----------------------------------------
+    Total                      2.096ns (0.825ns logic, 1.271ns route)
+                                       (39.4% logic, 60.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[7]_AND_14_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.601ns (Levels of Logic = 3)
+  Source:            system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_33_LDC (LATCH)
+  Destination:       led_counter_0_LED_pin<7> (PAD)
+  Source Clock:      system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[7]_AND_14_o falling
+
+  Data Path: system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_33_LDC to led_counter_0_LED_pin<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.389   0.608  led_counter_0/USER_LOGIC_I/counter_std_33_LDC (led_counter_0/USER_LOGIC_I/counter_std_33_LDC)
+     LUT3:I0->O           30   0.053   0.551  led_counter_0/USER_LOGIC_I/counter_std_331 (LED<7>)
+     end scope: 'system_i/led_counter_0:LED<7>'
+     end scope: 'system_i:led_counter_0_LED_pin<7>'
+     OBUF:I->O                 0.000          led_counter_0_LED_pin_7_OBUF (led_counter_0_LED_pin<7>)
+    ----------------------------------------
+    Total                      1.601ns (0.442ns logic, 1.159ns route)
+                                       (27.6% logic, 72.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>'
+  Total number of paths / destination ports: 143 / 74
+-------------------------------------------------------------------------
+Offset:              2.760ns (Levels of Logic = 5)
+  Source:            system_i/led_counter_0/led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0 (FF)
+  Destination:       system_i/processing_system7_0/processing_system7_0/PS7_i:MAXIGP0WREADY (PAD)
+  Source Clock:      system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0> rising
+
+  Data Path: system_i/led_counter_0/led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0 to system_i/processing_system7_0/processing_system7_0/PS7_i:MAXIGP0WREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            30   0.282   0.787  led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0 (led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0)
+     LUT5:I1->O            7   0.053   0.642  led_counter_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1 (S_AXI_AWREADY)
+     end scope: 'system_i/led_counter_0:S_AXI_WREADY'
+     begin scope: 'system_i/axi_interconnect_1:M_AXI_WREADY<0>'
+     LUT3:I0->O            2   0.053   0.491  axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/S_AXI_WREADY1 (DEBUG_MC_MP_WDATACONTROL<1>)
+     LUT5:I3->O            1   0.053   0.399  axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/si_wready11 (DEBUG_SF_CB_WDATACONTROL<1>)
+     end scope: 'system_i/axi_interconnect_1:S_AXI_WREADY<0>'
+     begin scope: 'system_i/processing_system7_0:M_AXI_GP0_WREADY'
+    PS7:MAXIGP0WREADY          0.000          processing_system7_0/PS7_i
+    ----------------------------------------
+    Total                      2.760ns (0.441ns logic, 2.319ns route)
+                                       (16.0% logic, 84.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[6]_AND_16_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.601ns (Levels of Logic = 3)
+  Source:            system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_32_LDC (LATCH)
+  Destination:       led_counter_0_LED_pin<6> (PAD)
+  Source Clock:      system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[6]_AND_16_o falling
+
+  Data Path: system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_32_LDC to led_counter_0_LED_pin<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.389   0.608  led_counter_0/USER_LOGIC_I/counter_std_32_LDC (led_counter_0/USER_LOGIC_I/counter_std_32_LDC)
+     LUT3:I0->O           28   0.053   0.551  led_counter_0/USER_LOGIC_I/counter_std_321 (LED<6>)
+     end scope: 'system_i/led_counter_0:LED<6>'
+     end scope: 'system_i:led_counter_0_LED_pin<6>'
+     OBUF:I->O                 0.000          led_counter_0_LED_pin_6_OBUF (led_counter_0_LED_pin<6>)
+    ----------------------------------------
+    Total                      1.601ns (0.442ns logic, 1.159ns route)
+                                       (27.6% logic, 72.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[5]_AND_18_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.476ns (Levels of Logic = 3)
+  Source:            system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_31_LDC (LATCH)
+  Destination:       led_counter_0_LED_pin<5> (PAD)
+  Source Clock:      system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[5]_AND_18_o falling
+
+  Data Path: system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_31_LDC to led_counter_0_LED_pin<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.389   0.602  led_counter_0/USER_LOGIC_I/counter_std_31_LDC (led_counter_0/USER_LOGIC_I/counter_std_31_LDC)
+     LUT3:I0->O            6   0.053   0.432  led_counter_0/USER_LOGIC_I/counter_std_311 (LED<5>)
+     end scope: 'system_i/led_counter_0:LED<5>'
+     end scope: 'system_i:led_counter_0_LED_pin<5>'
+     OBUF:I->O                 0.000          led_counter_0_LED_pin_5_OBUF (led_counter_0_LED_pin<5>)
+    ----------------------------------------
+    Total                      1.476ns (0.442ns logic, 1.034ns route)
+                                       (29.9% logic, 70.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[4]_AND_20_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.469ns (Levels of Logic = 3)
+  Source:            system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_30_LDC (LATCH)
+  Destination:       led_counter_0_LED_pin<4> (PAD)
+  Source Clock:      system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[4]_AND_20_o falling
+
+  Data Path: system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_30_LDC to led_counter_0_LED_pin<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.389   0.608  led_counter_0/USER_LOGIC_I/counter_std_30_LDC (led_counter_0/USER_LOGIC_I/counter_std_30_LDC)
+     LUT3:I0->O            4   0.053   0.419  led_counter_0/USER_LOGIC_I/counter_std_301 (LED<4>)
+     end scope: 'system_i/led_counter_0:LED<4>'
+     end scope: 'system_i:led_counter_0_LED_pin<4>'
+     OBUF:I->O                 0.000          led_counter_0_LED_pin_4_OBUF (led_counter_0_LED_pin<4>)
+    ----------------------------------------
+    Total                      1.469ns (0.442ns logic, 1.027ns route)
+                                       (30.1% logic, 69.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[3]_AND_22_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.469ns (Levels of Logic = 3)
+  Source:            system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_29_LDC (LATCH)
+  Destination:       led_counter_0_LED_pin<3> (PAD)
+  Source Clock:      system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[3]_AND_22_o falling
+
+  Data Path: system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_29_LDC to led_counter_0_LED_pin<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.389   0.608  led_counter_0/USER_LOGIC_I/counter_std_29_LDC (led_counter_0/USER_LOGIC_I/counter_std_29_LDC)
+     LUT3:I0->O            4   0.053   0.419  led_counter_0/USER_LOGIC_I/counter_std_291 (LED<3>)
+     end scope: 'system_i/led_counter_0:LED<3>'
+     end scope: 'system_i:led_counter_0_LED_pin<3>'
+     OBUF:I->O                 0.000          led_counter_0_LED_pin_3_OBUF (led_counter_0_LED_pin<3>)
+    ----------------------------------------
+    Total                      1.469ns (0.442ns logic, 1.027ns route)
+                                       (30.1% logic, 69.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[2]_AND_24_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.463ns (Levels of Logic = 3)
+  Source:            system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_28_LDC (LATCH)
+  Destination:       led_counter_0_LED_pin<2> (PAD)
+  Source Clock:      system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[2]_AND_24_o falling
+
+  Data Path: system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_28_LDC to led_counter_0_LED_pin<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.389   0.602  led_counter_0/USER_LOGIC_I/counter_std_28_LDC (led_counter_0/USER_LOGIC_I/counter_std_28_LDC)
+     LUT3:I0->O            4   0.053   0.419  led_counter_0/USER_LOGIC_I/counter_std_281 (LED<2>)
+     end scope: 'system_i/led_counter_0:LED<2>'
+     end scope: 'system_i:led_counter_0_LED_pin<2>'
+     OBUF:I->O                 0.000          led_counter_0_LED_pin_2_OBUF (led_counter_0_LED_pin<2>)
+    ----------------------------------------
+    Total                      1.463ns (0.442ns logic, 1.021ns route)
+                                       (30.2% logic, 69.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[1]_AND_26_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.463ns (Levels of Logic = 3)
+  Source:            system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_27_LDC (LATCH)
+  Destination:       led_counter_0_LED_pin<1> (PAD)
+  Source Clock:      system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[1]_AND_26_o falling
+
+  Data Path: system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_27_LDC to led_counter_0_LED_pin<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.389   0.602  led_counter_0/USER_LOGIC_I/counter_std_27_LDC (led_counter_0/USER_LOGIC_I/counter_std_27_LDC)
+     LUT3:I0->O            4   0.053   0.419  led_counter_0/USER_LOGIC_I/counter_std_271 (LED<1>)
+     end scope: 'system_i/led_counter_0:LED<1>'
+     end scope: 'system_i:led_counter_0_LED_pin<1>'
+     OBUF:I->O                 0.000          led_counter_0_LED_pin_1_OBUF (led_counter_0_LED_pin<1>)
+    ----------------------------------------
+    Total                      1.463ns (0.442ns logic, 1.021ns route)
+                                       (30.2% logic, 69.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[0]_AND_28_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.463ns (Levels of Logic = 3)
+  Source:            system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_26_LDC (LATCH)
+  Destination:       led_counter_0_LED_pin<0> (PAD)
+  Source Clock:      system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[0]_AND_28_o falling
+
+  Data Path: system_i/led_counter_0/led_counter_0/USER_LOGIC_I/counter_std_26_LDC to led_counter_0_LED_pin<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.389   0.602  led_counter_0/USER_LOGIC_I/counter_std_26_LDC (led_counter_0/USER_LOGIC_I/counter_std_26_LDC)
+     LUT3:I0->O            4   0.053   0.419  led_counter_0/USER_LOGIC_I/counter_std_261 (LED<0>)
+     end scope: 'system_i/led_counter_0:LED<0>'
+     end scope: 'system_i:led_counter_0_LED_pin<0>'
+     OBUF:I->O                 0.000          led_counter_0_LED_pin_0_OBUF (led_counter_0_LED_pin<0>)
+    ----------------------------------------
+    Total                      1.463ns (0.442ns logic, 1.021ns route)
+                                       (30.2% logic, 69.8% route)
+
+=========================================================================
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[0]_AND_28_o
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    1.669|         |
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[1]_AND_26_o
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    1.669|         |
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[2]_AND_24_o
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    1.669|         |
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[3]_AND_22_o
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    1.669|         |
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[4]_AND_20_o
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    1.669|         |
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[5]_AND_18_o
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    1.669|         |
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[6]_AND_16_o
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    1.669|         |
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[7]_AND_14_o
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    1.669|         |
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>
+------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------------------------------------------+---------+---------+---------+---------+
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[0]_AND_28_o|         |    2.903|         |         |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[1]_AND_26_o|         |    2.786|         |         |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[2]_AND_24_o|         |    2.750|         |         |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[3]_AND_22_o|         |    2.753|         |         |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[4]_AND_20_o|         |    2.843|         |         |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[5]_AND_18_o|         |    2.721|         |         |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[6]_AND_16_o|         |    2.690|         |         |
+system_i/led_counter_0/led_counter_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[7]_AND_14_o|         |    2.766|         |         |
+system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>           |    4.163|         |         |         |
+------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.28 secs
+ 
+--> 
+
+Total memory usage is 479632 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

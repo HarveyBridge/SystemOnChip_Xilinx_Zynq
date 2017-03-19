@@ -1,0 +1,14 @@
+set -tmpdir C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.srcs\sources_1\edk\system\synthesis\xst_temp_dir\
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc7z020clg484-1
+-top system_processing_system7_0_wrapper
+-ifmt MIXED
+-ifn system_processing_system7_0_wrapper_xst.prj
+-ofn ../implementation/system_processing_system7_0_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.srcs\sources_1\edk\system\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sun Mar 19 15:21:57 2017
+# Process ID: 9420
+# Log file: C:/Users/BowenHsu/Documents/SystemOnChip_Xilinx_Zynq/Lab2_LED_IPIF/led_ipif/planAhead.log
+# Journal file: C:/Users/BowenHsu/Documents/SystemOnChip_Xilinx_Zynq/Lab2_LED_IPIF/led_ipif\planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab2_LED_IPIF\led_ipif\led_ipif.ppr}
+export_hardware [get_files C:/Users/BowenHsu/Documents/SystemOnChip_Xilinx_Zynq/Lab2_LED_IPIF/led_ipif/led_ipif.srcs/sources_1/edk/system/system.xmp]
+launch_sdk -workspace C:/Users/BowenHsu/Documents/SystemOnChip_Xilinx_Zynq/Lab2_LED_IPIF/led_ipif/led_ipif.sdk/SDK/SDK_Export -hwspec C:/Users/BowenHsu/Documents/SystemOnChip_Xilinx_Zynq/Lab2_LED_IPIF/led_ipif/led_ipif.sdk/SDK/SDK_Export/hw/system.xml
+reset_run synth_1
+reset_run impl_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step Bitgen
+wait_on_run impl_1
+launch_impact 
+export_hardware [get_files C:/Users/BowenHsu/Documents/SystemOnChip_Xilinx_Zynq/Lab2_LED_IPIF/led_ipif/led_ipif.srcs/sources_1/edk/system/system.xmp]
+launch_sdk -workspace C:/Users/BowenHsu/Documents/SystemOnChip_Xilinx_Zynq/Lab2_LED_IPIF/led_ipif/led_ipif.sdk/SDK/SDK_Export -hwspec C:/Users/BowenHsu/Documents/SystemOnChip_Xilinx_Zynq/Lab2_LED_IPIF/led_ipif/led_ipif.sdk/SDK/SDK_Export/hw/system.xml
