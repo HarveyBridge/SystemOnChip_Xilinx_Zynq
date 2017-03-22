@@ -1,0 +1,12 @@
+
+<RENDERBATCH>
+
+  <RENDERIMG RASNAME="C:\SoC\led_interrupt\led_interrupt.sdk\SDK\SDK_Export\hw\imgs\processing_system7_0.jpg" SVGNAME="C:\SoC\led_interrupt\led_interrupt.sdk\SDK\SDK_Export\hw\imgs\processing_system7_0.svg" TMPSVGFN="C:\SoC\led_interrupt\led_interrupt.srcs\sources_1\edk\system\__xps\.dswkshop\processing_system7_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\SoC\led_interrupt\led_interrupt.sdk\SDK\SDK_Export\hw\imgs\led_interrupt_ip_0.jpg" SVGNAME="C:\SoC\led_interrupt\led_interrupt.sdk\SDK\SDK_Export\hw\imgs\led_interrupt_ip_0.svg" TMPSVGFN="C:\SoC\led_interrupt\led_interrupt.srcs\sources_1\edk\system\__xps\.dswkshop\led_interrupt_ip_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\SoC\led_interrupt\led_interrupt.sdk\SDK\SDK_Export\hw\imgs\axi_interconnect_1.jpg" SVGNAME="C:\SoC\led_interrupt\led_interrupt.sdk\SDK\SDK_Export\hw\imgs\axi_interconnect_1.svg" TMPSVGFN="C:\SoC\led_interrupt\led_interrupt.srcs\sources_1\edk\system\__xps\.dswkshop\axi_interconnect_1.svg"/>
+
+  <RENDERIMG RASNAME="C:\SoC\led_interrupt\led_interrupt.sdk\SDK\SDK_Export\hw\imgs\system_blkd.jpg" SVGNAME="C:\SoC\led_interrupt\led_interrupt.sdk\SDK\SDK_Export\hw\imgs\system_blkd.svg" TMPSVGFN="C:\SoC\led_interrupt\led_interrupt.srcs\sources_1\edk\system\__xps\.dswkshop\system_blkd.svg"/>
+
+</RENDERBATCH>

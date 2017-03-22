@@ -1,0 +1,8 @@
+INTSTYLE=pa
+INFILE=C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab3_LED_IPIF_Intrrupt\led_interrupt\led_interrupt.runs\impl_1\system_stub_routed.ncd
+OUTFILE=C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab3_LED_IPIF_Intrrupt\led_interrupt\led_interrupt.runs\impl_1\system_stub.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab3_LED_IPIF_Intrrupt\led_interrupt\led_interrupt.runs\impl_1
+LICENSE=WebPack
+USER_INFO=__0_0_0

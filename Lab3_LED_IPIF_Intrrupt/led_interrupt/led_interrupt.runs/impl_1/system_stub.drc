@@ -1,0 +1,41 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Wed Mar 22 22:43:08 2017
+
+drc -z system_stub_routed.ncd system_stub.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv
+   _reg0[3]_AND_26_o is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv
+   _reg0[4]_AND_24_o is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv
+   _reg0[5]_AND_22_o is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv
+   _reg0[6]_AND_20_o is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv
+   _reg0[0]_AND_32_o is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv
+   _reg0[1]_AND_30_o is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv
+   _reg0[7]_AND_18_o is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv
+   _reg0[2]_AND_28_o is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+DRC detected 0 errors and 8 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

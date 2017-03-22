@@ -1,0 +1,14 @@
+REM
+REM PlanAhead(TM)
+REM htr.txt: a PlanAhead-generated description of how-to-repeat the
+REM          the basic steps of a run.  Note that runme.bat/sh needs
+REM          to be invoked for PlanAhead to track run status.
+REM Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+REM
+
+ngdbuild -intstyle ise -p xc7z020clg484-1 -dd _ngo -uc "system_stub.ucf" "system_stub.edf"
+map -intstyle pa -w "system_stub.ngd"
+par -intstyle pa "system_stub.ncd" -w "system_stub_routed.ncd"
+trce -intstyle ise -o "system_stub.twr" -v 30 -l 30 "system_stub_routed.ncd" "system_stub.pcf"
+xdl -secure -ncd2xdl -nopips "system_stub_routed.ncd" "system_stub_routed.xdl"
+bitgen "system_stub_routed.ncd" "system_stub.bit" "system_stub.pcf" -w -intstyle pa

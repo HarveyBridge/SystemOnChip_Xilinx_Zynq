@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[3]_AND_26_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[4]_AND_24_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[5]_AND_22_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[6]_AND_20_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[0]_AND_32_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[1]_AND_30_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[7]_AND_18_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">system_i/led_interrupt_ip_0/led_interrupt_ip_0/USER_LOGIC_I/Bus2IP_Resetn_slv_reg0[2]_AND_28_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+</messages>
+
