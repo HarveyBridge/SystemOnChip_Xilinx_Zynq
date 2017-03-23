@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="nt" product="ISE" version="14.7">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="Xst" timeStamp="Thu Mar 23 10:47:32 2017">
+    <section stringID="User_Env">
+      <table stringID="User_EnvVar">
+        <column stringID="variable"/>
+        <column stringID="value"/>
+        <row stringID="row" value="0">
+          <item stringID="variable" value="LMC_HOME"/>
+          <item stringID="value" value="C:\Xilinx92i\smartmodel\nt\installed_nt"/>
+        </row>
+        <row stringID="row" value="1">
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt;C:/Xilinx/14.7/ISE_DS/EDK\lib\nt;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt;C:/Xilinx/14.7/ISE_DS/EDK\bin\nt;C:/Xilinx/14.7/ISE_DS/EDK\gnu\microblaze\nt\bin;C:/Xilinx/14.7/ISE_DS/EDK\gnu\powerpc-eabi\nt\bin;C:/Xilinx/14.7/ISE_DS/EDK\gnuwin\bin;C:/Xilinx/14.7/ISE_DS/PlanAhead/bin;C:/Xilinx/14.7/ISE_DS/PlanAhead/lib/win32.o;C:/Xilinx/14.7/ISE_DS/PlanAhead/tps/win32/jre/bin/server;C:/Xilinx/14.7/ISE_DS/PlanAhead/tps/win32/jre/bin;C:/Xilinx/14.7/ISE_DS/ISE/bin/nt;C:/Xilinx/14.7/ISE_DS/ISE/lib/nt;C:/Xilinx/14.7/ISE_DS/common/bin/nt;C:/Xilinx/14.7/ISE_DS/common/lib/nt;C:\opencv\build\x64\vc12\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Xilinx92i\bin\nt;C:\MATLAB\R2014a\runtime\win64;C:\MATLAB\R2014a\bin;C:\Program Files\nodejs\;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microchip\xc16\v1.25\bin;C:\Python27;C:\opencv_3_0\opencv\build\x86\vc12\bin;C:\opencv_3_0\opencv\build\x64\vc12\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\nodejs\;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\PuTTY\;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\BowenHsu\AppData\Roaming\npm"/>
+        </row>
+        <row stringID="row" value="2">
+          <item stringID="variable" value="PATHEXT"/>
+          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+        </row>
+        <row stringID="row" value="3">
+          <item stringID="variable" value="XILINX_COMMON_TOOLS"/>
+          <item stringID="value" value="C:/Xilinx/14.7/ISE_DS/common"/>
+        </row>
+        <row stringID="row" value="4">
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="C:/Xilinx/14.7/ISE_DS/ISE"/>
+        </row>
+        <row stringID="row" value="5">
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="C:/Xilinx/14.7/ISE_DS/EDK"/>
+        </row>
+        <row stringID="row" value="6">
+          <item stringID="variable" value="XILINX_FOR_ALTIUM_OVERRIDE"/>
+          <item stringID="value" value=" "/>
+        </row>
+        <row stringID="row" value="7">
+          <item stringID="variable" value="XILINX_PLANAHEAD"/>
+          <item stringID="value" value="C:/Xilinx/14.7/ISE_DS/PlanAhead"/>
+        </row>
+        <row stringID="row" value="8">
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\;C:/Xilinx/14.7/ISE_DS/EDK"/>
+        </row>
+      </table>
+      <item stringID="User_EnvOs" value="OS Information">
+        <item stringID="User_EnvOsname" value="Microsoft Windows 7 , 64-bit"/>
+        <item stringID="User_EnvOsrelease" value="Service Pack 1  (build 7601)"/>
+      </item>
+      <item stringID="User_EnvHost" value="F222-PC01"/>
+      <table stringID="User_EnvCpu">
+        <column stringID="arch"/>
+        <column stringID="speed"/>
+        <row stringID="row" value="0">
+          <item stringID="arch" value="Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz"/>
+          <item stringID="speed" value="3292 MHz"/>
+        </row>
+      </table>
+    </section>
+    <section stringID="XST_OPTION_SUMMARY">
+      <item DEFAULT="Speed" label="-opt_mode" stringID="XST_OPTMODE" value="speed"/>
+      <item DEFAULT="As_Optimized" label="-netlist_hierarchy" stringID="XST_NETLISTHIERARCHY" value="as_optimized"/>
+      <item DEFAULT="1" label="-opt_level" stringID="XST_OPTLEVEL" value="1"/>
+      <item DEFAULT="" label="-p" stringID="XST_P" value="xc7z020clg484-1"/>
+      <item DEFAULT="" label="-top" stringID="XST_TOP" value="system"/>
+      <item DEFAULT="Mixed" label="-ifmt" stringID="XST_IFMT" value="MIXED"/>
+      <item DEFAULT="" label="-ifn" stringID="XST_IFN" value="system_xst.prj"/>
+      <item DEFAULT="" label="-ofn" stringID="XST_OFN" value="../implementation/system.ngc"/>
+      <item DEFAULT="/" stringID="XST_HIERARCHYSEPARATOR" value="/"/>
+      <item DEFAULT="Yes" label="-iobuf" stringID="XST_IOBUF" value="NO"/>
+      <item DEFAULT="100000" label="-max_fanout" stringID="XST_MAXFANOUT" value="10000"/>
+      <item DEFAULT="" label="-sd" stringID="XST_SD" value="{../implementation}"/>
+      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;C:\Users\BowenHsu\Documents\SystemOnChip_Xilinx_Zynq\Lab1_Hardware_LED\LED_counter\LED_counter.srcs\sources_1\edk\system\pcores\&quot; &quot;C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\&quot; &quot;C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\&quot; }"/>
+    </section>
+    <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORTFOUND_NO_MACRO"/>
+    <section stringID="XST_FINAL_REGISTER_REPORTFOUND_NO_MACRO"/>
+    <section stringID="XST_PARTITION_REPORT">
+      <section stringID="XST_PARTITION_IMPLEMENTATION_STATUS">
+        <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>
+      </section>
+    </section>
+    <section stringID="XST_DESIGN_SUMMARY">
+      <section stringID="XST_">
+        <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="system.ngc"/>
+      </section>
+      <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE">
+        <item dataType="int" stringID="XST_BELS" value="471">
+          <item dataType="int" stringID="XST_GND" value="4"/>
+          <item dataType="int" stringID="XST_INV" value="99"/>
+          <item dataType="int" stringID="XST_LUT1" value="30"/>
+          <item dataType="int" stringID="XST_LUT2" value="61"/>
+          <item dataType="int" stringID="XST_LUT3" value="22"/>
+          <item dataType="int" stringID="XST_LUT4" value="76"/>
+          <item dataType="int" stringID="XST_LUT5" value="26"/>
+          <item dataType="int" stringID="XST_LUT6" value="75"/>
+          <item dataType="int" stringID="XST_MUXCY" value="39"/>
+          <item dataType="int" stringID="XST_MUXF7" value="1"/>
+          <item dataType="int" stringID="XST_VCC" value="2"/>
+          <item dataType="int" stringID="XST_XORCY" value="36"/>
+        </item>
+        <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="294">
+          <item dataType="int" stringID="XST_FD" value="57"/>
+          <item dataType="int" stringID="XST_FDC" value="6"/>
+          <item dataType="int" stringID="XST_FDE" value="61"/>
+          <item dataType="int" stringID="XST_FDR" value="26"/>
+          <item dataType="int" stringID="XST_FDRE" value="144"/>
+        </item>
+        <item dataType="int" stringID="XST_CLOCK_BUFFERS" value="1">
+          <item dataType="int" label="-bufg" stringID="XST_BUFG" value="1"/>
+        </item>
+        <item dataType="int" stringID="XST_OTHERS" value="1"></item>
+      </section>
+    </section>
+    <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
+      <item stringID="XST_SELECTED_DEVICE" value="7z020clg484-1"/>
+      <item AVAILABLE="106400" dataType="int" label="Number of Slice Registers" stringID="XST_NUMBER_OF_SLICE_REGISTERS" value="294"/>
+      <item AVAILABLE="53200" dataType="int" label="Number of Slice LUTs" stringID="XST_NUMBER_OF_SLICE_LUTS" value="389"/>
+      <item AVAILABLE="53200" dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="389"/>
+      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="523"/>
+      <item AVAILABLE="523" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="229"/>
+      <item AVAILABLE="523" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="134"/>
+      <item AVAILABLE="523" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="160"/>
+      <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="19"/>
+      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="138"/>
+      <item AVAILABLE="200" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="0"/>
+      <item AVAILABLE="32" dataType="int" label="Number of BUFG/BUFGCTRLs" stringID="XST_NUMBER_OF_BUFGBUFGCTRLS" value="1"/>
+    </section>
+    <section stringID="XST_PARTITION_RESOURCE_SUMMARY">
+      <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>
+    </section>
+    <section stringID="XST_ERRORS_STATISTICS">
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="7"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="419"/>
+    </section>
+  </application>
+
+</document>
